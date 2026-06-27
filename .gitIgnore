@@ -1,0 +1,29 @@
+# Create the .gitignore file and add the rules
+Set-Content .gitignore @"
+# Ant build outputs
+build/
+dist/
+nbproject/private/
+nbproject/Makefile-genesis.properties
+nbproject/Package-*.properties
+
+# NetBeans specific
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Java / JVM outputs
+*.class
+*.jar
+*.war
+*.ear
+
+# OS-specific files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# User requested specific directory exclusion
+src/Resources
+src/icon
+"@
